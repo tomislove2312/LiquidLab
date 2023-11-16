@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+nav .divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--black5);
+}
+
+button {
+  height: 26px;
+}
