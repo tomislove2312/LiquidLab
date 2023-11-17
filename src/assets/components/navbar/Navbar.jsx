@@ -1,25 +1,31 @@
 import React from "react";
-import mainLogo from "../../images/navbar_logo.svg";
-import bars from "../../images/bars.svg";
-import { motion } from "framer-motion";
 import "./Navbar.css";
+import mainLogo from "../../images/navbar_logo.svg";
+import { motion, useCycle } from "framer-motion";
+import { MenuItem } from "./mobileNavbar/MenuItem";
+import { MenuToggle } from "./mobileNavbar/MenuToggle";
+import { sidebar, variants } from "./mobileNavbar/variants";
 
 const Navbar = () => {
+  const [isOpen, toggleOpen] = useCycle(false, true);
   return (
-    <nav>
+    <motion.nav initial={false} animate={isOpen ? "open" : "closed"}>
       <div className="navbar_logo">
         <img src={mainLogo} alt="LiquidLab Logo" />
       </div>
-      <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <img
-          className="proba"
-          src={bars}
-          alt="Icon for expanding the menu list"
-        />
-      </motion.button>
 
-      <div class="divider"></div>
-    </nav>
+      <MenuToggle toggle={() => toggleOpen()} />
+
+      <div className="divider"></div>
+      <motion.div className="open_nav_background" variants={sidebar} />
+      <motion.ul variants={variants}>
+        <MenuItem props="O nama" />
+        <MenuItem props="Kontakt" />
+        <MenuItem props="Paketi" />
+        <MenuItem props="PROVJERAGg" />
+        <MenuItem props="Paketi" />
+      </motion.ul>
+    </motion.nav>
   );
 };
 

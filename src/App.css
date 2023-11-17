@@ -1,3 +1,36 @@
+@font-face {
+  font-family: 'brandon_grotesquebold';
+  src: url('./assets/fonts/brandongrotesque-bold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/brandongrotesque-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'brandon_grotesquelight';
+  src: url('./assets/fonts/brandon-grotesque-light-58a8a4b38001d-webfont.woff2') format('woff2'),
+       url('./assets/fonts/brandon-grotesque-light-58a8a4b38001d-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'proxima_novaregular';
+  src: url('./assets/fonts/proxima_nova_regular-webfont.woff2') format('woff2'),
+       url('./assets/fonts/proxima_nova_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 :root {
   --primary-color: #77579e;
   --secondary-color: #57659e;
@@ -15,6 +48,25 @@
   --black25: #6f667a;
   --black10: #9489a1;
   --black5: #bbaecb;
+
+  --fontsize-p: 21;
+  --fontsize-h1: 91;
+  --fontsize-h2: 64;
+  --fontsize-h3: 45.5;
+  --fontsize-h4: 32;
+  --fontheight-h5:22;
+  --fontheight-h6:16;
+
+  --fontheight-p:32;
+  --fontheight-h1:128;
+  --fontheight-h2:96;
+  --fontheight-h3:64;
+  --fontheight-h4:48;
+  --fontheight-h5:32;
+  --fontheight-h6:24;
+
+  
+
 }
 
 *,
@@ -43,5 +95,5 @@ input[type="reset"] {
 }
 img {
   object-fit: cover;
-  display: block;
+  /* display: block; */
 }

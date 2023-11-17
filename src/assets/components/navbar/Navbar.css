@@ -1,8 +1,14 @@
 nav {
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0.5rem;
+  
+}
+.navbar_logo {
+  z-index: 1;
+  width: 129px;
 }
 nav .divider {
   height: 1px;
@@ -10,6 +16,36 @@ nav .divider {
   background-color: var(--black5);
 }
 
-button {
-  height: 26px;
+nav button {
+  z-index: 1;
+  width:23px;
+}
+.open_nav_background {
+  position: absolute;
+  left:0;
+  top:0;
+  width: 500px;
+  height: 500px;
+  background: var(--linear-gradiant);
+}
+
+nav ul {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 550px) {
+nav {
+  padding:1rem
+}
+.navbar_logo {
+  width: 200px;
+}
+nav button {
+  width:32px
+}
+.open_nav_background {
+  width:700px;
+}
 }
