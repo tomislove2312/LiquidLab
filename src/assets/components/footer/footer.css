@@ -1,0 +1,75 @@
+
+#svg {
+    position: absolute;
+    
+    width: 1500px;
+    margin: 0;
+    display: block;
+    z-index: -1;
+   
+    
+}
+.footer_container {
+    position: relative;
+    max-width: 1200px;
+    height: 540px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content:end ;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    
+  
+    
+}
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+  flex-wrap: wrap;
+  font-family: proxima_novaregular;
+  line-height: var(--fontheight-h6);
+  }
+
+ .menu {
+    padding: 2rem;
+    
+ } 
+.copyright {
+    margin-bottom: 0.5rem;
+    color:white;
+    font-family: proxima_novaregular;
+    line-height: var(--fontheight-h5);
+    font-size: var(--fontsize-h6);
+    
+}
+.menu__link {
+  color:white;
+  font-size: var(--fontsize-h5);
+  
+  
+  padding-left: 1rem;
+}
+.vertical_line {
+    border-left: 2px solid white;
+}
+
+@media screen and (min-width: 768px) {
+    .vertical_line_wide {
+        border-left: 3px solid white;
+    }
+    .vertical_line {
+        border-left: 3px solid white;
+    }
+    .menu__link {
+        color:white;
+        font-size: var(--fontsize-h4);
+        padding-left: 1rem;
+      }
+}

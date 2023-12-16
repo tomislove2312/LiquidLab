@@ -1,0 +1,117 @@
+header {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.between_factories {
+  height: 200px;
+}
+.between_wide_factories {
+  height: 20px;
+}
+.background {
+  position: absolute;
+  z-index: -4;
+  width: 100%;
+}
+.main_logo {
+  position: relative;
+  top: -64px;
+  width: 300px;
+  height: 258px;
+  margin: auto;
+}
+.empty_div {
+  height: 220px;
+}
+header h3 {
+  font-family: proxima_novaregular;
+  line-height: var(--fontheight-h5);
+  color: var(--black75);
+  text-align: center;
+  padding: 1rem 3rem;
+  max-width: 400px;
+  margin: auto;
+}
+.dots {
+  display: none;
+}
+@media (min-width: 550px) {
+  .dots {
+    display: inline;
+  }
+  header h3 {
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: space-between;
+    font-size: var(--fontsize-h5);
+    padding: 2rem 3rem;
+    line-height: var(--fontheight-h5);
+    max-width: 1200px;
+  }
+  .left_side_premier {
+    width: 25%;
+    padding-left: 1rem;
+  }
+  .right_side_premier {
+    width: 25%;
+    padding-right: 1rem;
+  }
+  .main_logo {
+    position: absolute;
+    width: 360px;
+    top: 400px;
+    height: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 550px) {
+  .between_wide_factories {
+    height: 240px;
+  }
+}
+@media (min-width: 800px) {
+  header h3 {
+    top: 80px;
+    font-size: 30px;
+  }
+  .between_wide_factories {
+    height: 160px;
+  }
+}
+@media (min-width: 1000px) {
+  .main_logo {
+    position: absolute;
+    width: 600px;
+    top: 400px;
+    height: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .welcome {
+    display: none;
+  }
+  header h3 {
+    display: flex;
+    position: relative;
+    top: 160px;
+    justify-content: space-between;
+    font-size: var(--fontsize-h4);
+    padding: 2rem 1rem;
+    line-height: var(--fontheight-h4);
+  }
+  .left_side_premier {
+    width: 35%;
+    padding-left: 3rem;
+  }
+  .right_side_premier {
+    width: 35%;
+    padding-right: 3rem;
+  }
+  .between_wide_factories {
+    height: 220px;
+  }
+}

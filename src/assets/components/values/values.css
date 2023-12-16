@@ -1,0 +1,107 @@
+.value {
+  color: var(--black75);
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  /* height: 140px; */
+  border: 2px solid rgba(119, 87, 158, 0.4);
+  box-shadow: rgba(119, 87, 158, 0.5) 0px 3px 8px;
+  border-radius: 20px;
+}
+.libra {
+  width: 50%;
+  margin: 2rem auto;
+}
+.our_values {
+  font-family: brandon_grotesquebold;
+  font-size: var(--fontsize-h5);
+  color: var(--black50);
+  text-align: center;
+  margin: 2rem 0;
+}
+.values {
+  /* margin-top: 5rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-self: center;
+}
+.value h3 {
+  margin-top: 9px;
+  font-family: brandon_grotesquebold;
+  font-size: var(--fontsize-h5);
+  color: var(--black50);
+}
+.value p {
+  padding: 0.5rem 1rem;
+  /* margin-top: 0.6rem; */
+  font-family: proxima_novaregular;
+  line-height: var(--fontheight-h6);
+  color: var(--black75);
+}
+@media screen and (min-width: 768px) {
+  .values {
+    /* margin-top: 5rem; */
+    display: flex;
+    flex-direction: row;
+    /* gap: 50px; */
+    justify-content: center;
+    align-self: center;
+  }
+
+  /* .our_values h2 {
+    font-size: 3rem;
+  } */
+  /* .value {
+    color: white;
+    width: 30%;
+    height: 280px;
+    border: 2px solid rgba(155, 219, 226, 0.25);
+    box-shadow: rgba(155, 219, 226, 0.25) 0px 3px 8px;
+    border-radius: 20px;
+  } */
+
+  .value:nth-child(1) {
+    margin-left: 1rem;
+  }
+  .value:nth-child(3) {
+    margin-right: 1rem;
+  }
+  .value p {
+    margin: auto;
+    font-family: "proxima_novaregular", sans-serif;
+    font-size: var(--fontsize-h5);
+    text-align: center;
+    line-height: var(--fontheight-h5);
+    padding: 1rem;
+  }
+  .value h3 {
+    /* margin-top: 1rem; */
+    font-family: "brandon_grotesquebold", sans-serif;
+    text-align: center;
+    font-size: var(--fontsize-h4);
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our_values h2 {
+    font-family: brandon_grotesquebold;
+    font-size: var(--fontsize-h3);
+    color: var(--black75);
+    padding-left: 2rem;
+
+    order: 1;
+  }
+  .our_values_wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 6rem;
+  }
+  .libra {
+    order: 2;
+    flex-basis: 60%;
+  }
+}
