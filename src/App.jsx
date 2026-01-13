@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./assets/components/navbar/Navbar";
 import Header from "./assets/components/header/Header";
-import AboutUs from "./assets/components/aboutUs/aboutUs";
+import AboutUs from "./assets/components/aboutUs/AboutUs";
 import Pricing from "./assets/components/pricing/Pricing";
 import Values from "./assets/components/values/Values";
 import Contact from "./assets/components/contact/contact";
