@@ -103,26 +103,22 @@
 @media screen and (min-width: 768px) {
   .contact__content {
     max-width: 1200px;
-    margin:4rem auto 2rem auto ;
+    margin: 6rem auto 2rem auto;
     /* padding: 2rem; */
     flex-direction: row;
-    
-    
   }
   .contact__title {
-    order:0;
+    order: 0;
     font-family: brandon_grotesquebold;
     font-size: var(--fontsize-h3);
     color: var(--black75);
-    flex-basis: 30%;
+    flex-basis: 40%;
     padding-left: 2rem;
-    
   }
   .owl_img {
     order: 2;
     position: relative;
     right: 80px;
-    
   }
   .owl_img img {
     display: block;
@@ -138,4 +134,3 @@
     padding-right: 2rem;
   }
 }
-

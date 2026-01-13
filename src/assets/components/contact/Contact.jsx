@@ -11,10 +11,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_qnxe5u7",
+      "service_66f7xse",
       "template_9i2j197",
       form.current,
-      "uCmOJeKBH0qDe3jEZ"
+      "ZZJWeDaNW9rlZOBJF"
     );
     e.target.reset();
   };

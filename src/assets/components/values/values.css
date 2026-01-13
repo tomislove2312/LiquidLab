@@ -42,7 +42,7 @@
 }
 @media screen and (min-width: 768px) {
   .values {
-    /* margin-top: 5rem; */
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     /* gap: 50px; */
@@ -103,5 +103,8 @@
   .libra {
     order: 2;
     flex-basis: 60%;
+  }
+  .our-values {
+    margin-top: 3rem;
   }
 }

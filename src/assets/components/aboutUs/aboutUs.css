@@ -2,21 +2,21 @@ section {
   max-width: 1200px;
   margin: auto;
 }
-.we_specialize {
+.about-us__we-specialize {
   padding: 0.5rem 3rem;
 
   font-family: proxima_novaregular;
   line-height: var(--fontheight-h5);
   color: var(--black75);
   text-align: center;
-
+  background: white;
   max-width: 600px;
   margin: 2rem auto 0 auto;
 }
-.empty_div_aboutus {
-  height: 272px;
+.about-us__empty-div {
+  height: 180px;
 }
-section h4 {
+.about-us h4 {
   text-align: center;
   font-family: brandon_grotesquebold;
   font-size: var(--fontsize-h4);
@@ -32,53 +32,27 @@ section h4 {
   opacity: 0.7;
   margin: 2rem auto 1rem auto;
 }
-section img {
+.about-us img {
   width: 100%;
   border-radius: 50px;
 }
 
-@media (min-width: 640px) {
-  .empty_div_aboutus {
-    height: 340px;
-  }
-}
 @media (min-width: 800px) {
-  section h4 {
-    font-family: brandon_grotesquebold;
-    font-size: var(--fontsize-h3);
-    color: var(--black75);
-    background-color: #fff;
-    width: 180px;
-    /* margin: auto; */
-
-    border-radius: 30px;
+  .about-us__empty-div {
+    height: 240px;
   }
-  .we_specialize {
-    line-height: var(--fontheight-h4);
-    color: var(--black75);
-    font-size: var(--fontsize-h4);
-    text-align: left;
-    max-width: 1200px;
-    padding: 0;
-    /* margin: 0; */
-  }
-}
-@media (min-width: 1000px) {
-  .empty_div_aboutus {
-    height: 640px;
-  }
-  .widescreen_container {
+  .about-us__widescreen-container {
     display: flex;
 
     flex-wrap: wrap;
     align-items: center;
   }
-  .intro_container {
+  .about-us__intro-container {
     margin-top: 3rem;
     order: 3;
     width: 100%;
   }
-  section h4 {
+  .about-us h4 {
     font-family: brandon_grotesquebold;
     font-size: var(--fontsize-h3);
     color: var(--black75);
@@ -88,14 +62,22 @@ section img {
 
     border-radius: 30px;
   }
-  .we_specialize {
+  .about-us__we-specialize {
     flex-basis: 75%;
     line-height: var(--fontheight-h4);
     color: var(--black75);
     font-size: var(--fontsize-h4);
     text-align: left;
     max-width: 1200px;
-    padding: 0;
+    padding: 0 2rem;
     /* margin: 0; */
+  }
+}
+@media (min-width: 1000px) {
+  .about-us__empty-div {
+    height: 530px;
+  }
+  .about-us img {
+    opacity: 1;
   }
 }

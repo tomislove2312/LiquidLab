@@ -4,26 +4,21 @@ import together from "../../images/together.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Intro from "../Intro/Intro";
 import together2 from "../../images/together.jpg";
+import { useTranslation } from "react-i18next";
 const AboutUs = () => {
+  const { t } = useTranslation();
   return (
-    <section>
-      <div className="empty_div_aboutus"></div>
-      <div className="widescreen_container">
-        <h4>About Us</h4>
-        {/* <img src={together2} /> */}
-        <div className="intro_container">
+    <section className="about-us">
+      <div className="about-us__empty-div"></div>
+      <div className="about-us__widescreen-container">
+        <h4 id="aboutUs">{t("about")}</h4>
+
+        <div className="about-us__intro-container">
           <Intro />
         </div>
 
-        <div className="we_specialize">
-          <p>
-            We specialize in creating unique and unforgettable bar experiences,
-            we know that every bar is unique. That's why we take a customized
-            approach to every project, tailoring our services to meet your
-            specific needs and goals. Whether you're looking to create a
-            signature cocktail menu,improve your bar's efficiency or design a
-            completely new stunning menu.
-          </p>
+        <div className="about-us__we-specialize">
+          <p id="weSpecialize">{t("we_specialize")}</p>
         </div>
       </div>
     </section>

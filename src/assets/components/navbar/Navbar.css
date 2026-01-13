@@ -1,4 +1,4 @@
-nav {
+.navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -7,47 +7,95 @@ nav {
   margin: auto;
   padding: 0.25rem;
 }
-.navbar_logo {
+.navbar__logo {
   z-index: 1;
   width: 128px;
   margin: 0.5rem 0 0 0.5rem;
 }
-nav .divider {
+.navbar .divider {
   height: 1px;
   width: 100%;
   background-color: var(--black5);
 }
 
-nav button {
+.navbar__button-mobile {
   z-index: 1;
   width: 24px;
   height: 20px;
   margin-right: 0.5rem;
 }
-.open_nav_background {
+.navbar__lng-btn {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-family: "brandon_grotesquebold", sans-serif;
+  margin-top: 0.25rem;
+}
+.navbar__lng-btn-desktop {
+  display: flex;
+  gap: 1rem;
+  width: 80px;
+  align-items: center;
+  font-family: proxima_novaregular, sans-serif;
+  font-size: var(--fontsize-h5);
+  color: var(--black75);
+}
+.navbar__open-nav-bg {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 500px;
-  z-index: -1;
-  background: var(--background);
+  background: #e4ddec;
 }
 
-.mobile_list {
+.navbar__mobile-list {
   display: flex;
-  height: 600px;
-  gap: 1.5rem;
+  height: 620px;
+  gap: 0.8rem;
   flex-direction: column;
   position: absolute;
-  left: 8px;
+  left: 0.8rem;
+  z-index: 10;
 }
-
+.navbar__menu-list__menu-items {
+  font-family: proxima_novaregular, sans-serif;
+  font-size: var(--fontsize-h5);
+  color: var(--black75);
+}
+.navbar__menu-list__menu-items-desktop {
+  transition: 0.5s;
+  padding: 1rem 0.5rem;
+  background-size: 200% auto;
+  font-family: proxima_novaregular, sans-serif;
+  font-size: var(--fontsize-h5);
+  color: var(--black75);
+  /* border-radius: 50px; */
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  background-image: linear-gradient(
+    140deg,
+    #fff 0%,
+    #fff 51%,
+    #fff 60%,
+    rgba(119, 87, 158, 0.6) 100%
+  );
+}
+.navbar__menu-list__menu-items-desktop:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+.navbar__desktop-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem;
+}
 @media (min-width: 550px) {
-  .navbar_logo {
+  .navbar__logo {
     width: 200px;
   }
-  nav button {
+  .navbar__button-mobile {
     width: 32px;
     height: 28px;
   }
@@ -57,14 +105,8 @@ nav button {
 }
 
 @media (min-width: 800px) {
-  nav button {
+  .navbar__button-mobile {
     display: none;
-  }
-  .desktop_list {
-    order: 1;
-    display: flex;
-    gap: 2rem;
-    margin-right: 1rem;
   }
   nav .divider {
     order: 2;

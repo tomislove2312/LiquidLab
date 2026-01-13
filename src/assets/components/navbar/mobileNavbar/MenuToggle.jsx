@@ -11,7 +11,7 @@ const Path = (props) => (
 );
 
 export const MenuToggle = ({ toggle }) => (
-  <button onClick={toggle}>
+  <button className="navbar__button-mobile" onClick={toggle}>
     <svg viewBox="0 0 23 23">
       <Path
         variants={{

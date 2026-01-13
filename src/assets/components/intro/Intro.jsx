@@ -51,42 +51,55 @@ const Intro = () => {
         animate={playVideo ? "visible" : "hidden"}
         className="app__video"
       >
-        <video
-          src={LLIntro}
-          ref={videoRef}
-          type="video/mp4"
-          loop
-          controls={false}
-          muted
-        />
-      </motion.div>
-      <div className="app__video-overlay ">
-        <motion.div
-          variants={{
-            visible: {
-              scale: [1, 0.8, 0.6, 0.4, 0],
-            },
-            hidden: {
-              opacity: 1,
-            },
-          }}
-          transition={{
-            duration: 0.2,
-          }}
-          initial="hidden"
-          animate={playVideo ? "visible" : "hidden"}
-          className="thumbnail"
-        >
-          <img src={together} />
-        </motion.div>
-        <div className="app__video-overlay_circle " onClick={handleVideo}>
-          {playVideo ? (
-            <FontAwesomeIcon icon="fa-duotone fa-circle-stop" />
+        <div className="intro__video">
+          <video
+            src={LLIntro}
+            ref={videoRef}
+            type="video/mp4"
+            loop
+            controls={false}
+            muted
+          />
+          {isDesktop ? (
+            <button onClick={handleVideo} className="intro__stop">
+              <FontAwesomeIcon
+                size="2xl"
+                style={{
+                  "--fa-primary-color": "#76539c",
+                  "--fa-secondary-color": "#76539c",
+                  "--fa-secondary-opacity": "0.5",
+                  "--fa-primary-opacity": "1",
+                }}
+                icon="fa-duotone fa-circle-stop"
+              />
+            </button>
           ) : (
+            ""
+          )}
+        </div>
+      </motion.div>
+      <motion.div
+        variants={{
+          visible: {
+            scale: [1, 0.8, 0.6, 0.4, 0],
+          },
+          hidden: {
+            opacity: 1,
+          },
+        }}
+        transition={{
+          duration: 0.2,
+        }}
+        initial="hidden"
+        animate={playVideo ? "visible" : "hidden"}
+        className="thumbnail"
+      >
+        <div className="app__video-overlay ">
+          <div className="app__video-overlay_circle " onClick={handleVideo}>
             <FontAwesomeIcon
               icon="fa-duotone fa-circle-play "
               beat
-              size="xl"
+              size="2xl"
               style={{
                 "--fa-primary-color": "#76539c",
                 "--fa-secondary-color": "#fff",
@@ -94,9 +107,12 @@ const Intro = () => {
                 "--fa-primary-opacity": "1",
               }}
             />
-          )}
+          </div>
         </div>
-      </div>
+        <div className="together">
+          <img src={together} />
+        </div>
+      </motion.div>
     </div>
   );
 };

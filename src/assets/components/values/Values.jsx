@@ -18,7 +18,7 @@ function Values() {
     return () => window.removeEventListener("resize", updateMedia);
   });
   return (
-    <div className="window">
+    <section className="our-values" id="values">
       <div className="our_values_wrapper">
         <div className="libra">
           {!isDesktop ? (
@@ -70,7 +70,7 @@ function Values() {
           <p>{t("cornerstone")}</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

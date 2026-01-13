@@ -1,16 +1,31 @@
 .app__video__wrapper {
   position: relative;
+  margin-top: 2rem;
+
   /* margin-top: 3rem; */
 }
 .thumbnail {
   position: absolute;
+  top: 0;
   z-index: 1;
+
   padding: 0rem 3rem;
-  margin: 2rem auto 1rem auto;
-  max-width: 400px;
+  margin: 1rem auto 1rem auto;
 }
 .thumbnail img {
-  opacity: 0.8;
+  opacity: 1;
+}
+.intro__video {
+  position: relative;
+}
+.intro__stop {
+  position: absolute;
+  top: 50%;
+  right: 45%;
+  align-items: center;
+
+  border-radius: 50%;
+  cursor: pointer;
 }
 .app__video video {
   width: 100%;
@@ -29,6 +44,7 @@
 }
 .app__video-overlay_circle {
   display: flex;
+
   justify-content: center;
   align-items: center;
 
@@ -46,9 +62,18 @@
     /* margin: 2rem auto 1rem auto; */
     /* max-width: 1200px; */
   }
+  .intro__stop {
+    position: absolute;
+    top: 50%;
+    right: 48%;
+    align-items: center;
+
+    border-radius: 50%;
+    cursor: pointer;
+  }
   .app__video video {
     width: 100%;
-    height: 75vh;
+    height: 740px;
     object-fit: cover;
     border-radius: 10px;
     z-index: 0;

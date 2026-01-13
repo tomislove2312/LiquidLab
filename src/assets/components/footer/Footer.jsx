@@ -1,14 +1,20 @@
 import React from "react";
 import "./footer.css";
-import { ReactComponent as Waves } from "../../images/waves/Waves.jsx";
+import { ReactComponent as Waves } from "./waves/Waves.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="footer_container">
       <Waves />
-      <ul class="social-icon">
-        <li class="social-icon__item">
-          <a class="social-icon__link" href="#">
+      <ul className="social-icon">
+        <li className="social-icon__item">
+          <a
+            className="social-icon__link"
+            href="https://www.instagram.com/liquidlab_cocktails/"
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon="fa-duotone fa-instagram"
               style={{ color: "#fff" }}
@@ -17,8 +23,12 @@ const Footer = () => {
           </a>
         </li>
 
-        <li class="social-icon__item">
-          <a class="social-icon__link" href="#">
+        <li className="social-icon__item">
+          <a
+            className="social-icon__link"
+            href="https://wa.me/385913681482"
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon="fa-duotone fa-whatsapp"
               style={{ color: "#fff" }}
@@ -27,31 +37,31 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <ul class="menu">
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            Home
+      <ul className="menu">
+        <li className="menu__item">
+          <a className="menu__link" href="#home">
+            {t("home")}
           </a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link vertical_line" href="#">
-            About
+        <li className="menu__item">
+          <a className="menu__link vertical_line" href="#weSpecialize">
+            {t("about")}
           </a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link vertical_line" href="#">
-            Packages
+        <li className="menu__item">
+          <a className="menu__link vertical_line" href="#packages">
+            {t("packages")}
           </a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link vertical_line_wide" href="#">
-            Values
+        <li className="menu__item">
+          <a className="menu__link vertical_line_wide" href="#values">
+            {t("3values")}
           </a>
         </li>
 
-        <li class="menu__item">
-          <a class="menu__link vertical_line" href="#">
-            Contact
+        <li className="menu__item">
+          <a className="menu__link vertical_line" href="#contact">
+            {t("contact")}
           </a>
         </li>
       </ul>

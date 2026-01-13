@@ -1,89 +1,143 @@
-header {
+.header {
   position: relative;
   max-width: 1200px;
   margin: auto;
 }
 
-.between_factories {
-  height: 200px;
+.header__between-factories {
+  height: 180px;
 }
-.between_wide_factories {
-  height: 20px;
-}
-.background {
+
+.header__background {
   position: absolute;
   z-index: -4;
   width: 100%;
 }
-.main_logo {
+.header__main-logo {
   position: relative;
-  top: -64px;
   width: 300px;
-  height: 258px;
+
   margin: auto;
+  height: 300px;
 }
-.empty_div {
-  height: 220px;
+.header__empty-div {
+  height: 140px;
 }
-header h3 {
-  font-family: proxima_novaregular;
+.header__main-logo__background {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 2rem;
+  border-radius: 50%;
+  background: white;
+  z-index: -1;
+}
+.header__main-logo__bubbles-background {
+  position: absolute;
+  width: 100%;
+  top: 7rem;
+}
+.header__intro-text {
+  position: relative;
+  font-size: var(--fontsize-h5);
+  color: var(--black50);
   line-height: var(--fontheight-h5);
-  color: var(--black75);
+  font-family: "proxima_novaregular";
+  letter-spacing: 0.1rem;
   text-align: center;
-  padding: 1rem 3rem;
-  max-width: 400px;
-  margin: auto;
+  padding: 1rem 1rem;
+  max-width: 80%;
+
+  margin: 1rem auto;
 }
-.dots {
+.header__intro-text-bg {
+  position: absolute;
+  width: 340px;
+  height: 220px;
+  top: -2rem;
+  right: 0px;
+  border-radius: 50%;
+  background: white;
+  z-index: -1;
+}
+.header__intro-text__left {
+  color: var(--black50);
+}
+.header__intro-text__right {
+  color: var(--black75);
+}
+.header__into-text_next-level {
+  color: var(--black90);
+}
+.header__intro-text_dots {
   display: none;
 }
 @media (min-width: 550px) {
-  .dots {
-    display: inline;
+  .header__main-logo__background {
+    display: none;
   }
-  header h3 {
+  .header__intro-text-bg {
+    display: none;
+  }
+  .header__intro-text_dots {
+    display: inline;
+    position: relative;
+    top: 8px;
+  }
+  .header__intro-text {
     display: flex;
     position: relative;
-    top: 20px;
+    top: 200px;
+    justify-content: space-between;
+    font-size: var(--fontsize-h4);
+    padding: 2rem 1rem;
+    line-height: var(--fontheight-h4);
+    font-family: "brandon_grotesquebold";
+    letter-spacing: 0.1rem;
+  }
+  .header__intro-text {
+    display: flex;
+    position: relative;
+    top: 50px;
     justify-content: space-between;
     font-size: var(--fontsize-h5);
     padding: 2rem 3rem;
     line-height: var(--fontheight-h5);
     max-width: 1200px;
+    align-items: center;
+    z-index: -1;
   }
-  .left_side_premier {
-    width: 25%;
+  .header__intro-text__left {
+    width: 30%;
     padding-left: 1rem;
+    background: white;
+    border-radius: 30px;
   }
-  .right_side_premier {
-    width: 25%;
+  .header__intro-text__right {
+    width: 30%;
     padding-right: 1rem;
+    background: white;
+    border-radius: 30px;
   }
-  .main_logo {
+  .header__main-logo {
     position: absolute;
-    width: 360px;
-    top: 400px;
-    height: 500px;
+    width: 300px;
+    top: 280px;
+
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
-@media (min-width: 550px) {
-  .between_wide_factories {
-    height: 240px;
+  .header__between-wide-factories {
+    height: 4rem;
   }
 }
-@media (min-width: 800px) {
-  header h3 {
-    top: 80px;
-    font-size: 30px;
-  }
-  .between_wide_factories {
-    height: 160px;
-  }
-}
+
 @media (min-width: 1000px) {
-  .main_logo {
+  .header__between-wide-factories {
+    height: 10rem;
+  }
+
+  .header__main-logo {
     position: absolute;
     width: 600px;
     top: 400px;
@@ -94,24 +148,28 @@ header h3 {
   .welcome {
     display: none;
   }
-  header h3 {
+  .header__intro-text {
     display: flex;
     position: relative;
-    top: 160px;
+    top: 200px;
     justify-content: space-between;
-    font-size: var(--fontsize-h4);
-    padding: 2rem 1rem;
-    line-height: var(--fontheight-h4);
+    font-size: var(--fontsize-h3);
+    padding: 2rem 0.5rem;
+    line-height: var(--fontheight-h3);
+    font-family: "brandon_grotesquebold";
+    letter-spacing: 0.1rem;
   }
-  .left_side_premier {
+  .header__intro-text__left {
     width: 35%;
     padding-left: 3rem;
   }
-  .right_side_premier {
+  .header__intro-text__right {
     width: 35%;
     padding-right: 3rem;
   }
-  .between_wide_factories {
-    height: 220px;
+  .header__intro-text_dots {
+    display: inline;
+    position: relative;
+    top: 12px;
   }
 }
