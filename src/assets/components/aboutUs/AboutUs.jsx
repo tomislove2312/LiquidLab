@@ -2,7 +2,7 @@ import React from "react";
 import "./aboutUs.css";
 import together from "../../images/together.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Intro from "../Intro/Intro";
+import Intro from "../intro/Intro";
 import together2 from "../../images/together.jpg";
 import { useTranslation } from "react-i18next";
 const AboutUs = () => {
