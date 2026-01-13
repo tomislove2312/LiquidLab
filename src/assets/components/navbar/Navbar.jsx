@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./navbar.css";
+import "./Navbar.css";
 import { motion, useCycle } from "framer-motion";
 import mainLogo from "../../images/navbar_logo.svg";
 import i18next from "i18next";
