@@ -5,7 +5,7 @@ import Header from "./assets/components/header/Header";
 import AboutUs from "./assets/components/aboutUs/AboutUs";
 import Pricing from "./assets/components/pricing/Pricing";
 import Values from "./assets/components/values/Values";
-import Contact from "./assets/components/contact/contact";
+import Contact from "./assets/components/contact/Contact";
 import Footer from "./assets/components/footer/Footer";
 function App() {
   const [changeLanguage, setChangeLanguage] = useState(true);
